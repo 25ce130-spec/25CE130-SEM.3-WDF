@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>StudentHub - Contact</title>
+
+    <style>
+        body{
+            background-color: skyblue;
+            text-align: center;
+            font-family: Arial;
+        }
+
+        h1{
+            color: rgb(24, 52, 212);
+            font-size: 45px;
+        }
+
+        h2{
+            color: rgb(228, 0, 0);
+        }
+
+        h3{
+            color: green;
+        }
+
+        input, textarea{
+            padding: 5px;
+        }
+
+        input[type="submit"]{
+            background-color: rgb(45, 45, 255);
+            color: white;
+            font-weight: bold;
+        }
+
+        input[type="reset"]{
+            background-color: rgb(45, 45, 255);
+            color: white;
+            font-weight: bold;
+        }
+
+        a{
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h2>Registration Form</h2>
+
+    <form>
+
+        <label>First Name:</label><br>
+        <input type="text" name="fname" required><br><br>
+
+        <label>Last Name:</label><br>
+        <input type="text" name="lname" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="abc@gmail.com"
+            required><br><br>
+
+        <label>Phone Number:</label><br>
+        <input type="tel" name="phone" pattern="[6-9][0-9]{9}" maxlength="10" placeholder="9876543210"
+            title="Enter a valid 10-digit mobile number" required><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" name="password" required><br><br>
+
+        <label>Confirm Password:</label><br>
+        <input type="password" name="cpassword" required><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> Other
+        <br><br>
+
+        <label>Date of Birth:</label><br>
+        <input type="date" name="dob"><br><br>
+
+        <label>Course:</label><br>
+        <select name="course">
+            <option>Select Course</option>
+            <option>BCA</option>
+            <option>B.Tech</option>
+            <option>B.Sc</option>
+            <option>B.Com</option>
+        </select><br><br>
+
+        <label>Address:</label><br>
+        <textarea rows="4" cols="30"></textarea><br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+
+        <br>
+
+        <p>
+            <a href="index.html">Back to Home</a>
+        </p>
+
+    </form>
+
+</body>
+
+</html>
