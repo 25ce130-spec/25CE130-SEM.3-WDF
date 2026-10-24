@@ -1,0 +1,178 @@
+[
+  {
+    "id": 1,
+    "title": "CHARUSAT National Hackathon 2026",
+    "category": "Hackathon",
+    "date": "2026-12-05",
+    "venue": "CHARUSAT Central Auditorium",
+    "organizer": "CSPIT CE Department",
+    "seats": 300,
+    "status": "Open",
+    "description": "36-hour non-stop national level coding marathon covering Web3, AI/ML, and Smart Healthcare."
+  },
+  {
+    "id": 2,
+    "title": "Hands-on Cloud & Kubernetes Workshop",
+    "category": "Workshop",
+    "date": "2026-11-18",
+    "venue": "Computing Lab 4",
+    "organizer": "AWS Cloud Club",
+    "seats": 60,
+    "status": "Filling Fast",
+    "description": "Learn containerization with Docker and deployment onto scalable Kubernetes clusters."
+  },
+  {
+    "id": 3,
+    "title": "Campus Recruitment Drive - Phase 1",
+    "category": "Placement",
+    "date": "2026-11-02",
+    "venue": "Placement Cell Seminar Hall",
+    "organizer": "Training & Placement Cell",
+    "seats": 250,
+    "status": "Open",
+    "description": "On-campus interviews and coding rounds with top global software engineering firms."
+  },
+  {
+    "id": 4,
+    "title": "Inter-Collegiate Sports Meet (Spoural 2026)",
+    "category": "Sports",
+    "date": "2026-12-12",
+    "venue": "University Sports Ground",
+    "organizer": "Sports Department",
+    "seats": 500,
+    "status": "Open",
+    "description": "Cricket, football, badminton, and track athletic competitions between universities."
+  },
+  {
+    "id": 5,
+    "title": "Generative AI Masterclass",
+    "category": "Seminar",
+    "date": "2026-11-25",
+    "venue": "CSPIT Seminar Hall 1",
+    "organizer": "AI Student Forum",
+    "seats": 120,
+    "status": "Open",
+    "description": "Deep dive into Large Language Models, prompt engineering, and fine-tuning with PyTorch."
+  },
+  {
+    "id": 6,
+    "title": "Cybersecurity & Ethical Hacking Bootcamp",
+    "category": "Workshop",
+    "date": "2026-11-28",
+    "venue": "Network Security Lab",
+    "organizer": "Null Chapter CHARUSAT",
+    "seats": 50,
+    "status": "Open",
+    "description": "Hands-on penetration testing, OWASP Top 10 vulnerabilities, and Capture-The-Flag (CTF) challenges."
+  },
+  {
+    "id": 7,
+    "title": "Annual Cultural Fest (Cognizance 2026)",
+    "category": "Cultural",
+    "date": "2026-12-20",
+    "venue": "Open Air Amphitheatre",
+    "organizer": "Student Council",
+    "seats": 1500,
+    "status": "Upcoming",
+    "description": "Celebration of music, dance, theatre, and arts with celebrity performances and band nights."
+  },
+  {
+    "id": 8,
+    "title": "Frontend Frameworks: React & Next.js Workshop",
+    "category": "Workshop",
+    "date": "2026-11-15",
+    "venue": "Web Development Lab",
+    "organizer": "WDF Student Circle",
+    "seats": 75,
+    "status": "Open",
+    "description": "Master component architectures, server-side rendering, and responsive design systems."
+  },
+  {
+    "id": 9,
+    "title": "Entrepreneurship & Startup Pitch Day",
+    "category": "Seminar",
+    "date": "2026-11-22",
+    "venue": "Incubation Centre",
+    "organizer": "E-Cell CHARUSAT",
+    "seats": 100,
+    "status": "Open",
+    "description": "Pitch your technology prototype to venture capitalists and angel investors for seed funding."
+  },
+  {
+    "id": 10,
+    "title": "IoT & Smart Robotics Exhibition",
+    "category": "Exhibition",
+    "date": "2026-12-08",
+    "venue": "Robotics Center of Excellence",
+    "organizer": "Robotics Club",
+    "seats": 200,
+    "status": "Open",
+    "description": "Interactive autonomous drones, robotic arms, and home automation IoT projects."
+  },
+  {
+    "id": 11,
+    "title": "Competitive Programming League Round 3",
+    "category": "Competition",
+    "date": "2026-11-10",
+    "venue": "Online (HackerRank)",
+    "organizer": "Coding Club",
+    "seats": 400,
+    "status": "Open",
+    "description": "Algorithm and data structure problem solving contest with rating perks on CodeChef."
+  },
+  {
+    "id": 12,
+    "title": "Research Paper Writing for IEEE Conferences",
+    "category": "Seminar",
+    "date": "2026-11-05",
+    "venue": "CSPIT Conference Room",
+    "organizer": "Research Advisory Cell",
+    "seats": 80,
+    "status": "Open",
+    "description": "Guidelines for writing, formatting, LaTeX compiling, and submitting papers to indexed journals."
+  },
+  {
+    "id": 13,
+    "title": "Alumni Mentorship & Career Guidance Summit",
+    "category": "Seminar",
+    "date": "2026-12-15",
+    "venue": "Auditorium 2",
+    "organizer": "Alumni Association",
+    "seats": 200,
+    "status": "Upcoming",
+    "description": "Connect with CHARUSAT alumni working at Microsoft, Google, Amazon, and top startups."
+  },
+  {
+    "id": 14,
+    "title": "Design Systems & UI/UX Design Sprint",
+    "category": "Workshop",
+    "date": "2026-11-30",
+    "venue": "Design Studio Lab",
+    "organizer": "Figma Student Community",
+    "seats": 60,
+    "status": "Open",
+    "description": "Hands-on UI/UX prototyping in Figma, user research, wireframing, and design tokens."
+  },
+  {
+    "id": 15,
+    "title": "Blood Donation & Health Checkup Camp",
+    "category": "Social",
+    "date": "2026-11-12",
+    "venue": "CHARUSAT Health Center",
+    "organizer": "NSS Volunteers",
+    "seats": 300,
+    "status": "Open",
+    "description": "Annual voluntary blood donation drive organized in collaboration with Red Cross Society."
+  },
+  {
+    "id": 16,
+    "title": "Web3 & Decentralized Apps (DApps) Seminar",
+    "category": "Seminar",
+    "date": "2026-12-02",
+    "venue": "Computing Seminar Hall",
+    "organizer": "Blockchain Guild",
+    "seats": 90,
+    "status": "Open",
+    "description": "Introductory guide to Ethereum smart contracts, Solidity programming, and decentralized networks."
+  }
+]

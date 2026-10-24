@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register | Practical 6</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="brand">STUDENT HUB PORTAL</div>
+    <nav class="nav-links">
+      <a href="index.html">🏠 Home</a>
+      <a href="login.html">🔐 Login</a>
+      <a href="register.html" class="active">📝 Register</a>
+      <a href="student-dashboard.html">🎓 Dashboard</a>
+      <a href="profile.html">👤 Profile</a>
+    </nav>
+  </header>
+
+  <p>Create your new student account in the Student Hub.</p>
+
+  <main class="container small-container" style="max-width: 500px; margin: 30px auto;">
+    <section class="card" style="text-align: center;">
+      <h2>Create Student Account</h2>
+      <p style="color: #64748b;">Join CHARUSAT Computer Engineering student portal.</p>
+
+      <form onsubmit="event.preventDefault(); alert('Account registered successfully!'); location.href='login.html';" style="text-align: left; margin-top: 15px;">
+        <div style="margin-bottom: 14px;">
+          <label style="display: block; font-weight: 700; margin-bottom: 5px;">Full Name</label>
+          <input type="text" placeholder="e.g. Vishv Vaghasiya" required style="width: 100%; padding: 12px; border: 1.5px solid #cbd5e1; border-radius: 8px;" />
+        </div>
+
+        <div style="margin-bottom: 14px;">
+          <label style="display: block; font-weight: 700; margin-bottom: 5px;">Student ID</label>
+          <input type="text" placeholder="e.g. 25CE130" required style="width: 100%; padding: 12px; border: 1.5px solid #cbd5e1; border-radius: 8px;" />
+        </div>
+
+        <div style="margin-bottom: 14px;">
+          <label style="display: block; font-weight: 700; margin-bottom: 5px;">Email</label>
+          <input type="email" placeholder="e.g. 25ce130@charusat.edu.in" required style="width: 100%; padding: 12px; border: 1.5px solid #cbd5e1; border-radius: 8px;" />
+        </div>
+
+        <div style="margin-bottom: 20px;">
+          <label style="display: block; font-weight: 700; margin-bottom: 5px;">Password</label>
+          <input type="password" placeholder="Create password" required style="width: 100%; padding: 12px; border: 1.5px solid #cbd5e1; border-radius: 8px;" />
+        </div>
+
+        <button type="submit" class="btn" style="width: 100%;">Create Account</button>
+      </form>
+      <p style="margin-top: 18px; font-size: 0.9rem; color: #475569;">
+        Already have an account? <a href="login.html" style="color: #2563eb; font-weight: 700;">Sign In</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 <strong>StudentHub Portal</strong> • Charotar University of Science and Technology (CHARUSAT)</p>
+    <p>Student: <strong>Vishv Vaghasiya</strong> | ID: <strong>25CE130</strong> | CSPIT-CE</p>
+  </footer>
+</body>
+
+</html>

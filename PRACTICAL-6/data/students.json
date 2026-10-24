@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "enrollment": "25CE130",
+    "name": "Vishv Vaghasiya",
+    "branch": "Computer Engineering",
+    "semester": 3,
+    "email": "25ce130@charusat.edu.in",
+    "cgpa": 9.42,
+    "status": "Active"
+  },
+  {
+    "id": 2,
+    "enrollment": "25CE001",
+    "name": "Aarav Sharma",
+    "branch": "Computer Engineering",
+    "semester": 3,
+    "email": "25ce001@charusat.edu.in",
+    "cgpa": 9.15,
+    "status": "Active"
+  },
+  {
+    "id": 3,
+    "enrollment": "25CE015",
+    "name": "Diya Patel",
+    "branch": "Computer Engineering",
+    "semester": 3,
+    "email": "25ce015@charusat.edu.in",
+    "cgpa": 9.28,
+    "status": "Active"
+  },
+  {
+    "id": 4,
+    "enrollment": "25IT042",
+    "name": "Rohan Mehta",
+    "branch": "Information Technology",
+    "semester": 3,
+    "email": "25it042@charusat.edu.in",
+    "cgpa": 8.84,
+    "status": "Active"
+  },
+  {
+    "id": 5,
+    "enrollment": "25CS012",
+    "name": "Ananya Joshi",
+    "branch": "Computer Science",
+    "semester": 3,
+    "email": "25cs012@charusat.edu.in",
+    "cgpa": 9.35,
+    "status": "Active"
+  },
+  {
+    "id": 6,
+    "enrollment": "25AI008",
+    "name": "Kavya Desai",
+    "branch": "Artificial Intelligence",
+    "semester": 3,
+    "email": "25ai008@charusat.edu.in",
+    "cgpa": 9.05,
+    "status": "Active"
+  },
+  {
+    "id": 7,
+    "enrollment": "25CE045",
+    "name": "Manan Shah",
+    "branch": "Computer Engineering",
+    "semester": 3,
+    "email": "25ce045@charusat.edu.in",
+    "cgpa": 8.72,
+    "status": "Active"
+  },
+  {
+    "id": 8,
+    "enrollment": "25IT019",
+    "name": "Pooja Trivedi",
+    "branch": "Information Technology",
+    "semester": 3,
+    "email": "25it019@charusat.edu.in",
+    "cgpa": 8.91,
+    "status": "Active"
+  },
+  {
+    "id": 9,
+    "enrollment": "25CS034",
+    "name": "Harsh Verma",
+    "branch": "Computer Science",
+    "semester": 3,
+    "email": "25cs034@charusat.edu.in",
+    "cgpa": 8.65,
+    "status": "Active"
+  },
+  {
+    "id": 10,
+    "enrollment": "25AI021",
+    "name": "Devanshi Dave",
+    "branch": "Artificial Intelligence",
+    "semester": 3,
+    "email": "25ai021@charusat.edu.in",
+    "cgpa": 9.18,
+    "status": "Active"
+  },
+  {
+    "id": 11,
+    "enrollment": "25CE088",
+    "name": "Siddharth Rana",
+    "branch": "Computer Engineering",
+    "semester": 3,
+    "email": "25ce088@charusat.edu.in",
+    "cgpa": 8.45,
+    "status": "Active"
+  },
+  {
+    "id": 12,
+    "enrollment": "25IT056",
+    "name": "Nidhi Bhatt",
+    "branch": "Information Technology",
+    "semester": 3,
+    "email": "25it056@charusat.edu.in",
+    "cgpa": 9.12,
+    "status": "Active"
+  },
+  {
+    "id": 13,
+    "enrollment": "25CS078",
+    "name": "Yash Patel",
+    "branch": "Computer Science",
+    "semester": 3,
+    "email": "25cs078@charusat.edu.in",
+    "cgpa": 8.58,
+    "status": "Active"
+  },
+  {
+    "id": 14,
+    "enrollment": "25AI039",
+    "name": "Tanvi Solanki",
+    "branch": "Artificial Intelligence",
+    "semester": 3,
+    "email": "25ai039@charusat.edu.in",
+    "cgpa": 8.96,
+    "status": "Active"
+  },
+  {
+    "id": 15,
+    "enrollment": "25CE112",
+    "name": "Parth Prajapati",
+    "branch": "Computer Engineering",
+    "semester": 3,
+    "email": "25ce112@charusat.edu.in",
+    "cgpa": 8.82,
+    "status": "Active"
+  },
+  {
+    "id": 16,
+    "enrollment": "25IT064",
+    "name": "Isha Kothari",
+    "branch": "Information Technology",
+    "semester": 3,
+    "email": "25it064@charusat.edu.in",
+    "cgpa": 9.24,
+    "status": "Active"
+  }
+]

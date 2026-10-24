@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "title": "Mid-Semester Examination Schedule Published",
+    "category": "Exam",
+    "date": "2026-10-24",
+    "author": "Examination Cell",
+    "priority": "High",
+    "description": "The mid-semester examination timetable for Semester 3 Computer Engineering has been officially published. Check the portal timetable section for room allocations."
+  },
+  {
+    "id": 2,
+    "title": "CHARUSAT National Hackathon 2026 Announcement",
+    "category": "Event",
+    "date": "2026-10-22",
+    "author": "CSPIT CE Department",
+    "priority": "High",
+    "description": "Annual 36-hour National Hackathon will be held on December 5-6, 2026 at CHARUSAT Central Campus. Cash prize pool of INR 2,50,000 for winning teams."
+  },
+  {
+    "id": 3,
+    "title": "Practical Lab Submission Deadline (Practicals 1 to 6)",
+    "category": "Academic",
+    "date": "2026-10-20",
+    "author": "Prof. H. Patel (ITUE203 Faculty)",
+    "priority": "High",
+    "description": "All Semester 3 CE students must finalize their WDF practical assignments (HTML, CSS, DOM, Form Validation, Fetch API) before November 10, 2026."
+  },
+  {
+    "id": 4,
+    "title": "Hands-on Workshop on Cloud Native & Kubernetes",
+    "category": "Event",
+    "date": "2026-10-18",
+    "author": "IEEE Student Branch",
+    "priority": "Medium",
+    "description": "Two-day technical workshop featuring industry speakers from AWS and Google Cloud. Hands-on experience with Docker, microservices, and cluster management."
+  },
+  {
+    "id": 5,
+    "title": "Campus Recruitment Drive 2026 - Phase 1",
+    "category": "General",
+    "date": "2026-10-15",
+    "author": "Training & Placement Cell",
+    "priority": "High",
+    "description": "Over 40 top-tier software companies visiting campus for software engineering roles and summer internships. Register on the placement portal by October 28."
+  },
+  {
+    "id": 6,
+    "title": "University Library Digital Repository Upgraded",
+    "category": "Academic",
+    "date": "2026-10-12",
+    "author": "Chief Librarian",
+    "priority": "Low",
+    "description": "Students can now access over 15,000 IEEE, ACM, and Springer journals from both on-campus and off-campus networks via university SSO credentials."
+  },
+  {
+    "id": 7,
+    "title": "Diwali Vacation & Academic Schedule Notice",
+    "category": "General",
+    "date": "2026-10-10",
+    "author": "Registrar Office",
+    "priority": "Medium",
+    "description": "The university campus will remain closed for Diwali festivities from November 12 to November 20, 2026. Regular classes will resume on November 21."
+  },
+  {
+    "id": 8,
+    "title": "Remedial Examination Form Submission Window",
+    "category": "Exam",
+    "date": "2026-10-08",
+    "author": "Academic Section",
+    "priority": "Medium",
+    "description": "Eligible students must submit remedial examination application forms and exam fees through online banking before the cutoff date of October 31, 2026."
+  },
+  {
+    "id": 9,
+    "title": "Inter-Departmental Cricket Tournament (Spoural 2026)",
+    "category": "Event",
+    "date": "2026-10-05",
+    "author": "Sports Committee",
+    "priority": "Low",
+    "description": "Annual university sports tournament Spoural 2026 cricket tryouts for CSPIT engineering branch teams will start this Saturday at the University Sports Complex."
+  },
+  {
+    "id": 10,
+    "title": "Semester 3 Attendance Shortage Warning Notice",
+    "category": "Academic",
+    "date": "2026-10-02",
+    "author": "Head of Department (CE)",
+    "priority": "High",
+    "description": "Students with attendance lower than 75% in theoretical or laboratory classes must meet their academic counselors immediately to avoid exam debarment."
+  },
+  {
+    "id": 11,
+    "title": "AI & Deep Learning Seminar by Nvidia Expert",
+    "category": "Event",
+    "date": "2026-09-28",
+    "author": "CSPIT CE Department",
+    "priority": "Medium",
+    "description": "Keynote session on Generative AI and GPU Accelerated Computing by Dr. S. Rao, Principal AI Scientist at Nvidia. Limited seats in Auditorium 2."
+  },
+  {
+    "id": 12,
+    "title": "Hostel Fee Payment Deadline for Even Semester",
+    "category": "General",
+    "date": "2026-09-25",
+    "author": "Chief Warden Office",
+    "priority": "Medium",
+    "description": "Resident students must deposit their hostel and mess fee for the upcoming academic term. Receipt copies should be submitted to respective hostel wardens."
+  },
+  {
+    "id": 13,
+    "title": "Final Year Capstone Project Exhibition (InnoTech 2026)",
+    "category": "Academic",
+    "date": "2026-09-20",
+    "author": "Innovation Council",
+    "priority": "Medium",
+    "description": "Annual innovation showcase presenting 120+ software, IoT, and embedded engineering prototypes developed by final year computer engineering undergraduates."
+  },
+  {
+    "id": 14,
+    "title": "Continuous Internal Assessment (CIA-2) Marks Uploaded",
+    "category": "Exam",
+    "date": "2026-09-15",
+    "author": "Examination Cell",
+    "priority": "High",
+    "description": "Internal test marks for all 3rd semester courses (CSUC201, ITUE203, CSUC202) are uploaded on the student portal. Grievance window open for 48 hours."
+  },
+  {
+    "id": 15,
+    "title": "Open Source Contribution Drive & Git Bootcamp",
+    "category": "Event",
+    "date": "2026-09-10",
+    "author": "Google Developer Student Club (GDSC)",
+    "priority": "Low",
+    "description": "Learn version control, Git branching, pull requests, and contribute to open-source student utility software during this weekend workshop."
+  },
+  {
+    "id": 16,
+    "title": "Bus Service Route Modification for Anand & Vadodara",
+    "category": "General",
+    "date": "2026-09-05",
+    "author": "Transport Department",
+    "priority": "Low",
+    "description": "Updated bus pickup timings and designated stop routes for commuting day-scholars from Anand, Nadiad, and Vadodara starting Monday."
+  }
+]

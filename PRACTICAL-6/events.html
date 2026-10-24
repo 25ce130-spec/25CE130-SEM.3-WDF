@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus Events & Workshops | StudentHub (Practical 6)</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <header class="topbar">
+    <div class="brand">STUDENT HUB PORTAL</div>
+    <nav class="nav-links">
+      <a href="index.html">🏠 Hub Home</a>
+      <a href="index.html#noticesSection">📢 Notices</a>
+      <a href="events.html" class="active">🎉 Campus Events</a>
+      <a href="students.html">👥 Student Directory</a>
+      <a href="student-dashboard.html">🎓 Dashboard</a>
+    </nav>
+  </header>
+
+  <p>Explore upcoming hackathons, technical workshops, seminars, and sports meets at CHARUSAT.</p>
+
+  <main class="container">
+    <section class="card">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px; margin-bottom: 15px;">
+        <div>
+          <h2 style="margin: 0;">🎉 Campus Events & Technical Workshops</h2>
+          <p style="margin: 4px 0 0; color: #64748b;">
+            Fetched dynamically from <code>data/events.json</code> using JavaScript Fetch API with category filtering, search, and client-side pagination.
+          </p>
+        </div>
+        <span id="eventMatchCount" class="badge event" style="font-size: 0.85rem; padding: 6px 14px;">Loading...</span>
+      </div>
+
+      <!-- Controls Bar -->
+      <div class="controls-bar">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="search" id="searchEvent" placeholder="Search events by title, organizer, or venue..." aria-label="Search events" />
+        </div>
+
+        <select id="filterEventCategory" class="filter-select" aria-label="Filter events by category">
+          <option value="All">All Categories</option>
+          <option value="Hackathon">Hackathons</option>
+          <option value="Workshop">Hands-on Workshops</option>
+          <option value="Seminar">Technical Seminars</option>
+          <option value="Sports">Sports Competitions</option>
+          <option value="Cultural">Cultural & Arts</option>
+        </select>
+
+        <select id="sortEventDate" class="filter-select" aria-label="Sort events by date">
+          <option value="earliest">📅 Upcoming Date First</option>
+          <option value="latest">📅 Latest Date First</option>
+          <option value="titleAsc">🔤 Title (A to Z)</option>
+        </select>
+      </div>
+
+      <!-- Status Bar -->
+      <div class="status-bar">
+        <div id="eventStatus">
+          <span class="spinner"></span> Fetching campus events from <code>data/events.json</code>...
+        </div>
+      </div>
+
+      <!-- Events Card Grid -->
+      <div class="item-grid" id="eventList" role="region" aria-live="polite"></div>
+
+      <!-- Pagination -->
+      <div class="pagination-container">
+        <button id="prevEventPage" class="pagination-btn" type="button" disabled>&#8592; Previous Page</button>
+        <span id="eventPageInfo" class="page-indicator">Page 1 of 1</span>
+        <button id="nextEventPage" class="pagination-btn" type="button" disabled>Next Page &#8594;</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 <strong>StudentHub Portal</strong> • Charotar University of Science and Technology (CHARUSAT)</p>
+    <p>Student: <strong>Vishv Vaghasiya</strong> | ID: <strong>25CE130</strong> | CSPIT-CE</p>
+  </footer>
+
+  <script src="js/events.js"></script>
+</body>
+
+</html>

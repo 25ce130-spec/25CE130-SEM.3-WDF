@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Hub Portal | Practical 6 - Fetch API</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <center>
+    <h1>🎓 STUDENT HUB PORTAL</h1>
+    <p><b>Your Academic Management System</b></p>
+    <p style="font-size: 0.95rem; opacity: 0.9;"><b>Practical 6:</b> Rendering External JSON Data using Fetch API, Search and Filter</p>
+    <hr>
+
+    <!-- Top Quick Links for Practical 6 JSON Modules -->
+    <div style="max-width: 980px; margin: 15px auto; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
+      <a href="#noticesSection" class="btn" style="background: linear-gradient(135deg, #0284c7, #2563eb);">📢 Campus Notices (Live)</a>
+      <a href="events.html" class="btn" style="background: linear-gradient(135deg, #7c3aed, #a855f7);">🎉 Campus Events Explorer</a>
+      <a href="students.html" class="btn" style="background: linear-gradient(135deg, #059669, #10b981);">👥 Student Directory</a>
+    </div>
+
+    <h2>Welcome to Student Hub</h2>
+
+    <p>
+      Access all student and faculty academic services
+      from one place.
+    </p>
+
+    <br>
+
+    <!-- Practical-3 Styled Navigation Table -->
+    <table border="1" cellpadding="15" cellspacing="0" width="70%">
+
+      <tr>
+        <th>📌 Page Name</th>
+        <th>🔘 Action</th>
+      </tr>
+
+      <tr style="background: rgba(91, 140, 255, 0.18);">
+        <td><strong>📢 Campus Notices (Fetch API) ★</strong></td>
+        <td>
+          <button onclick="document.getElementById('noticesSection').scrollIntoView({behavior: 'smooth'})" style="background: linear-gradient(135deg, #0284c7, #2563eb);">
+            View Notices
+          </button>
+        </td>
+      </tr>
+
+      <tr style="background: rgba(168, 85, 247, 0.18);">
+        <td><strong>🎉 Campus Events Explorer ★</strong></td>
+        <td>
+          <button onclick="location.href='events.html'" style="background: linear-gradient(135deg, #7c3aed, #a855f7);">
+            Open Events
+          </button>
+        </td>
+      </tr>
+
+      <tr style="background: rgba(16, 185, 129, 0.18);">
+        <td><strong>👥 Student Directory ★</strong></td>
+        <td>
+          <button onclick="location.href='students.html'" style="background: linear-gradient(135deg, #059669, #10b981);">
+            Open Directory
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>🔐 Login</td>
+        <td>
+          <button onclick="location.href='login.html'">
+            Open Login
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>📝 Register</td>
+        <td>
+          <button onclick="location.href='register.html'">
+            Open Register
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>👤 Profile</td>
+        <td>
+          <button onclick="location.href='profile.html'">
+            Open Profile
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>🎓 Student Dashboard</td>
+        <td>
+          <button onclick="location.href='student-dashboard.html'">
+            Open Student
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>👨‍🏫 Faculty Dashboard</td>
+        <td>
+          <button onclick="location.href='faculty-dashboard.html'">
+            Open Faculty
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>📊 Attendance</td>
+        <td>
+          <button onclick="location.href='attendance.html'">
+            View Attendance
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>📑 Assignments</td>
+        <td>
+          <button onclick="location.href='assignments.html'">
+            View Assignments
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>📖 Courses</td>
+        <td>
+          <button onclick="location.href='courses.html'">
+            View Courses
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>🏆 Results</td>
+        <td>
+          <button onclick="location.href='results.html'">
+            View Results
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>🕐 Timetable</td>
+        <td>
+          <button onclick="location.href='timetable.html'">
+            View Timetable
+          </button>
+        </td>
+      </tr>
+
+    </table>
+
+    <br>
+    <hr>
+
+    <!-- Practical 6 Feature: Asynchronous Notices Explorer -->
+    <div id="noticesSection" class="container">
+      <section class="card">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px; margin-bottom: 15px;">
+          <div>
+            <h2 style="margin: 0; font-size: 1.6rem;">📢 Campus Circulars & Notices Explorer</h2>
+            <p style="margin: 4px 0 0; font-size: 0.92rem; color: #64748b;">
+              Fetched dynamically from <code>data/notices.json</code> using JavaScript Fetch API with real-time keyword search, category filter, sorting, and pagination.
+            </p>
+          </div>
+          <span id="matchCount" class="badge academic" style="font-size: 0.85rem; padding: 6px 14px;">Loading...</span>
+        </div>
+
+        <!-- Controls Bar: Search, Category Filter, and Date Sort -->
+        <div class="controls-bar">
+          <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="search" id="searchNotice" placeholder="Search notices by title, keyword, or author..." aria-label="Search notices" />
+          </div>
+
+          <select id="filterCategory" class="filter-select" aria-label="Filter notices by category">
+            <option value="All">All Categories</option>
+            <option value="Exam">Examinations</option>
+            <option value="Event">Events & Hackathons</option>
+            <option value="Academic">Academics & Labs</option>
+            <option value="General">General Campus Notices</option>
+          </select>
+
+          <select id="sortDate" class="filter-select" aria-label="Sort notices">
+            <option value="newest">📅 Newest Date First</option>
+            <option value="oldest">📅 Oldest Date First</option>
+            <option value="titleAsc">🔤 Title (A to Z)</option>
+          </select>
+        </div>
+
+        <!-- Status & Offline Feedback -->
+        <div class="status-bar">
+          <div id="noticeStatus">
+            <span class="spinner"></span> Fetching campus circulars from server...
+          </div>
+        </div>
+
+        <!-- Dynamically Generated Cards Grid -->
+        <div class="item-grid" id="noticeList" role="region" aria-live="polite"></div>
+
+        <!-- Pagination Controls -->
+        <div class="pagination-container">
+          <button id="prevPage" class="pagination-btn" type="button" disabled>&#8592; Previous Page</button>
+          <span id="pageInfo" class="page-indicator">Page 1 of 1</span>
+          <button id="nextPage" class="pagination-btn" type="button" disabled>Next Page &#8594;</button>
+        </div>
+      </section>
+    </div>
+
+    <br>
+    <hr>
+
+    <footer>
+      <center>
+        <p>
+          © 2026 <b>Student Hub Portal</b>
+        </p>
+        <p>
+          Built for Student & Faculty Management • Practical 6 Asynchronous Data Presentation
+        </p>
+        <p>
+          Student: <b>Vishv Vaghasiya</b> | ID: <b>25CE130</b> | CHARUSAT CSPIT-CE
+        </p>
+      </center>
+    </footer>
+
+    <br><br><br>
+
+  </center>
+
+  <!-- Practical 6 Notices Script -->
+  <script src="js/notices.js"></script>
+</body>
+
+</html>
