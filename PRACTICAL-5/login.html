@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Campus Portal | Practical 5</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="brand">STUDENT HUB PORTAL</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="login.html" class="active">Login</a>
+      <a href="register.html">Register</a>
+      <a href="profile.html">Profile</a>
+    </nav>
+  </header>
+
+  <p>
+    This page provides a login form for registered users.
+    Users can enter their credentials to access the student portal.
+  </p>
+
+  <main class="container small-container" style="max-width: 480px; margin: 20px auto;">
+    <section class="card" style="text-align: center;">
+      <h2>Welcome Back</h2>
+      <p style="color: #64748b;">Sign in to view your dashboard and academic updates.</p>
+
+      <form onsubmit="event.preventDefault(); alert('Login successful!'); location.href='student-dashboard.html';" style="text-align: left;">
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="student@charusat.edu.in" required />
+        </div>
+
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" placeholder="Enter password" required />
+        </div>
+
+        <button type="submit" class="btn" style="width: 100%; margin-top: 10px;">Sign In</button>
+      </form>
+
+      <p style="margin-top: 18px; font-size: 0.9rem; color: #475569;">
+        New student? <a href="register.html" style="color: #2563eb; font-weight: 700;">Complete Registration Form</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 <strong>StudentHub Portal</strong> • Charotar University of Science and Technology (CHARUSAT)</p>
+    <p>Student: <strong>Vishv Vaghasiya</strong> | ID: <strong>25CE130</strong> | CSPIT-CE</p>
+  </footer>
+</body>
+
+</html>
