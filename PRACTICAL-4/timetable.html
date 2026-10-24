@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timetable | StudentHub (Practical 4)</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand">
+        <div class="logo">🎓</div>
+        <div class="brand-text">
+          <h1>StudentHub Portal</h1>
+          <p>CHARUSAT • CSPIT-CE</p>
+        </div>
+      </a>
+
+      <nav class="site-nav" id="siteNav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="student-dashboard.html">Dashboard</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="timetable.html" class="active">Timetable</a></li>
+          <li><a href="results.html">Results</a></li>
+          <li><a href="announcements.html">Announcements</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="profile.html">Profile</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggleBtn" class="theme-btn" aria-label="Toggle Theme">
+          <span id="themeIcon">🌙</span> <span id="themeText">Dark</span>
+        </button>
+        <button id="hamburgerBtn" class="hamburger" aria-label="Toggle Navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Weekly Academic Timetable</h2>
+      <p>Semester 3 • Batch CE-1 • Room 302 / Lab 4</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>09:00 - 10:00</td>
+            <td>ITUE203 (WDF)</td>
+            <td>CE251 (DSA)</td>
+            <td>CE252 (DBMS)</td>
+            <td>ITUE203 (WDF)</td>
+            <td>MA251 (Maths)</td>
+          </tr>
+          <tr>
+            <td>10:00 - 11:00</td>
+            <td>CE251 (DSA)</td>
+            <td>CE253 (CN)</td>
+            <td>ITUE203 (WDF)</td>
+            <td>CE252 (DBMS)</td>
+            <td>CE251 (DSA)</td>
+          </tr>
+          <tr>
+            <td>11:00 - 11:15</td>
+            <td colspan="5" style="text-align:center; font-weight:bold; background:#e2e8f0;">☕ RECESS</td>
+          </tr>
+          <tr>
+            <td>11:15 - 01:15</td>
+            <td>WDF Lab (Lab 4)</td>
+            <td>DSA Lab (Lab 2)</td>
+            <td>DBMS Lab (Lab 3)</td>
+            <td>CN Lab (Lab 5)</td>
+            <td>Library / Mentoring</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 <strong>StudentHub Portal</strong> • Charotar University of Science and Technology (CHARUSAT)</p>
+    <p>Department of Computer Engineering (CSPIT-CE) • Practical 4</p>
+    <p>Student: <strong>Vishv Vaghasiya</strong> | ID: <strong>25CE130</strong></p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

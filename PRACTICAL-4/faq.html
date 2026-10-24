@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frequently Asked Questions | StudentHub (Practical 4)</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand">
+        <div class="logo">🎓</div>
+        <div class="brand-text">
+          <h1>StudentHub Portal</h1>
+          <p>CHARUSAT • CSPIT-CE</p>
+        </div>
+      </a>
+
+      <!-- Navigation Bar -->
+      <nav class="site-nav" id="siteNav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="student-dashboard.html">Dashboard</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="timetable.html">Timetable</a></li>
+          <li><a href="results.html">Results</a></li>
+          <li><a href="announcements.html">Announcements</a></li>
+          <li><a href="faq.html" class="active">FAQ</a></li>
+          <li><a href="profile.html">Profile</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Controls -->
+      <div class="header-actions">
+        <button id="themeToggleBtn" class="theme-btn" aria-label="Toggle Theme">
+          <span id="themeIcon">🌙</span> <span id="themeText">Dark</span>
+        </button>
+        <button id="hamburgerBtn" class="hamburger" aria-label="Toggle Navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="container">
+    <section class="card">
+      <h2>Frequently Asked Questions (FAQ)</h2>
+      <p>Interactive collapsible accordion built with JavaScript DOM event listeners and CSS smooth transitions.</p>
+
+      <div class="faq-list">
+        <!-- FAQ Item 1 -->
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span>What is the minimum attendance requirement for examinations?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Students must maintain at least <strong>80% attendance</strong> in both theory lectures and laboratory sessions as per university regulations to be eligible for end-semester examinations.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How do I access laboratory assignments and submit them?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Laboratory assignments and problem statements are uploaded on the <strong>Courses</strong> page and the departmental portal. You can submit your code files and reports directly through your Student Dashboard.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What is the grading scheme for ITUE203 (Web Development Frameworks)?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Continuous internal evaluation includes practical lab performance (40%), mid-semester examinations (30%), and the end-semester project and viva (30%).</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How does the theme switcher remember my preference?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>When you click the theme toggle button, your preference is saved in the browser's <code>localStorage</code> under <code>studenthub-theme</code> so it persists across page reloads.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 5 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Whom should I contact in case of portal login issues?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Please reach out to the CSPIT Computer Engineering departmental IT helpdesk or email <code>support.ce@charusat.edu.in</code> with your student enrollment ID.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2026 <strong>StudentHub Portal</strong> • Charotar University of Science and Technology (CHARUSAT)</p>
+    <p>Department of Computer Engineering (CSPIT-CE) • Practical 4: DOM Manipulation & Interactivity</p>
+    <p>Student: <strong>Vishv Vaghasiya</strong> | ID: <strong>25CE130</strong></p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Hub Portal | Practical 4 - DOM Manipulation</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <center>
+    <!-- Header Utility Bar with Theme Toggle -->
+    <div style="max-width: 980px; display: flex; justify-content: flex-end; align-items: center; padding: 10px 0; margin-bottom: 5px;">
+      <button id="themeToggleBtn" class="theme-btn" aria-label="Toggle Light and Dark Theme" style="width: auto; padding: 8px 18px; border-radius: 999px; font-weight: 700; display: inline-flex; align-items: center; gap: 8px;">
+        <span id="themeIcon">🌙</span> <span id="themeText">Dark</span>
+      </button>
+    </div>
+
+    <!-- Dismissible Notification Banner (DOM Event Handling) -->
+    <div id="notificationBanner" class="notification-banner">
+      <div class="banner-content">
+        <span style="font-size: 1.3rem;">📢</span>
+        <span><strong>Welcome to Student Hub!</strong> Semester 3 Mid-Sem examination schedules and Practical assignments have been published.</span>
+      </div>
+      <button id="closeBannerBtn" class="banner-close-btn" aria-label="Close Notification Banner">&times;</button>
+    </div>
+
+    <h1>🎓 STUDENT HUB PORTAL</h1>
+    <p><b>Your Academic Management System</b></p>
+    <p style="font-size: 0.95rem; opacity: 0.9;"><b>Practical 4:</b> JavaScript DOM Manipulation, Event Handling, and UI Interactivity</p>
+    <hr>
+
+    <!-- Campus Highlights Slider (Dynamic DOM Component) -->
+    <div style="max-width: 980px; margin: 20px auto;">
+      <section class="slider-container" id="highlightsSlider" aria-label="Campus Highlights Slider">
+        <div class="slides-wrapper" id="slidesWrapper">
+          <div class="slide">
+            <span class="slide-tag">Academics</span>
+            <h3>Semester 3 Mid-Sem Examination Schedule</h3>
+            <p>Mid-semester examinations commence from November 3, 2026. Review detailed syllabus and timetables.</p>
+          </div>
+          <div class="slide">
+            <span class="slide-tag">Hackathon</span>
+            <h3>CHARUSAT National Hackathon 2026</h3>
+            <p>Annual 36-hour National Hackathon organized by CSPIT CE Department. Exciting prizes & mentorship.</p>
+          </div>
+          <div class="slide">
+            <span class="slide-tag">Workshop</span>
+            <h3>Hands-on Cloud & Full-Stack Workshop</h3>
+            <p>Join industry experts from AWS & Google Cloud on modern architectures at CHARUSAT Auditorium.</p>
+          </div>
+          <div class="slide">
+            <span class="slide-tag">Placement</span>
+            <h3>Campus Recruitment Drive Phase-1</h3>
+            <p>Over 40+ leading software companies scheduled for engineering internships and full-time hiring.</p>
+          </div>
+        </div>
+
+        <!-- Slider Controls -->
+        <button class="slider-btn prev" id="prevSlide" aria-label="Previous Slide">&#10094;</button>
+        <button class="slider-btn next" id="nextSlide" aria-label="Next Slide">&#10095;</button>
+        <div class="slider-dots" id="sliderDots"></div>
+      </section>
+    </div>
+
+    <h2>Welcome to Student Hub</h2>
+
+    <p>
+      Access all student and faculty academic services
+      from one place.
+    </p>
+
+    <br>
+
+    <!-- Practical-3 Styled Navigation Table -->
+    <table border="1" cellpadding="15" cellspacing="0" width="70%">
+
+      <tr>
+        <th>📌 Page Name</th>
+        <th>🔘 Action</th>
+      </tr>
+
+      <tr>
+        <td>🔐 Login</td>
+        <td>
+          <button onclick="location.href='login.html'">
+            Open Login
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>📝 Register</td>
+        <td>
+          <button onclick="location.href='register.html'">
+            Open Register
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>👤 Profile</td>
+        <td>
+          <button onclick="location.href='profile.html'">
+            Open Profile
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>🎓 Student Dashboard</td>
+        <td>
+          <button onclick="location.href='student-dashboard.html'">
+            Open Student
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>👨‍🏫 Faculty Dashboard</td>
+        <td>
+          <button onclick="location.href='faculty-dashboard.html'">
+            Open Faculty
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>📊 Attendance</td>
+        <td>
+          <button onclick="location.href='attendance.html'">
+            View Attendance
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>📑 Assignments</td>
+        <td>
+          <button onclick="location.href='assignments.html'">
+            View Assignments
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>📖 Courses</td>
+        <td>
+          <button onclick="location.href='courses.html'">
+            View Courses
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>🏆 Results</td>
+        <td>
+          <button onclick="location.href='results.html'">
+            View Results
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>🕐 Timetable</td>
+        <td>
+          <button onclick="location.href='timetable.html'">
+            View Timetable
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>📢 Announcements</td>
+        <td>
+          <button onclick="location.href='announcements.html'">
+            View Announcements
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>❓ FAQ (Interactive Accordion)</td>
+        <td>
+          <button onclick="location.href='faq.html'">
+            Browse FAQs
+          </button>
+        </td>
+      </tr>
+
+    </table>
+
+    <br>
+
+    <!-- Campus Notice Modal Trigger (Practical 4 Interactive Feature) -->
+    <div style="max-width: 600px; margin: 20px auto; padding: 18px; border-radius: 16px; background: rgba(255, 255, 255, 0.12); border: 1px solid rgba(255, 255, 255, 0.25); backdrop-filter: blur(8px);">
+      <h3 style="margin-top: 0;">Interactive Campus Alert Dialog</h3>
+      <p style="font-size: 0.95rem; margin-bottom: 14px;">Test the accessible pop-up modal dialog with backdrop blur, focus handling, and keyboard Escape key dismissal.</p>
+      <button id="openModalBtn" style="width: auto; padding: 12px 28px; border-radius: 12px; font-weight: 700; cursor: pointer;">
+        🔔 View Important Notice
+      </button>
+    </div>
+
+    <!-- Interactive Modal Popup Overlay -->
+    <div class="modal-overlay" id="announcementModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-card">
+        <div class="modal-header">
+          <h3 id="modalTitle">📢 Important Academic Notice</h3>
+          <button class="modal-close-btn" id="closeModalBtn" aria-label="Close Modal">&times;</button>
+        </div>
+        <div class="modal-body" style="text-align: left;">
+          <p><strong>Subject:</strong> Submission of Practical Assignments for ITUE203 (WDF)</p>
+          <p>All 3rd Semester Computer Engineering students must complete and submit Practical Lab assignments (Practicals 1 to 6) through the portal before <strong>November 10, 2026</strong>.</p>
+          <p>Ensure that DOM manipulation, form validation, and Fetch API modules are properly implemented for laboratory evaluation.</p>
+        </div>
+        <div class="modal-footer" style="display: flex; gap: 10px; justify-content: flex-end;">
+          <button class="btn" id="modalOkBtn" style="width: auto; padding: 8px 20px;">Understood</button>
+          <button class="btn btn-secondary" id="modalDismissBtn" style="width: auto; padding: 8px 20px; background: #64748b;">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <hr>
+
+    <footer>
+      <center>
+        <p>
+          © 2026 <b>Student Hub Portal</b>
+        </p>
+        <p>
+          Built for Student & Faculty Management • Practical 4 Interactive DOM
+        </p>
+        <p>
+          Student: <b>Vishv Vaghasiya</b> | ID: <b>25CE130</b> | CHARUSAT CSPIT-CE
+        </p>
+      </center>
+    </footer>
+
+    <br><br><br>
+
+  </center>
+
+  <!-- Practical 4 JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

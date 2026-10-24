@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Student Hub (Practical 4)</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand">
+        <div class="logo">🎓</div>
+        <div class="brand-text">
+          <h1>StudentHub Portal</h1>
+          <p>CHARUSAT • CSPIT-CE</p>
+        </div>
+      </a>
+
+      <nav class="site-nav" id="siteNav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="login.html" class="active">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="student-dashboard.html">Dashboard</a></li>
+          <li><a href="profile.html">Profile</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggleBtn" class="theme-btn" aria-label="Toggle Theme">
+          <span id="themeIcon">🌙</span> <span id="themeText">Dark</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container small-container" style="max-width: 500px; margin: 40px auto; padding: 0 16px;">
+    <section class="card" style="padding: 30px; border-radius: 16px; background: var(--card-bg); box-shadow: var(--shadow);">
+      <h2 style="color: var(--card-text); margin-bottom: 8px;">Welcome Back</h2>
+      <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">Sign in to view your dashboard and academic updates.</p>
+      
+      <p style="font-size: 0.9rem; color: var(--card-text); background: rgba(56, 189, 248, 0.1); padding: 10px; border-radius: 8px; margin-bottom: 20px;">
+        This page provides authentication access for registered students and faculty members.
+      </p>
+
+      <form onsubmit="event.preventDefault(); alert('Login successful!'); location.href='student-dashboard.html';">
+        <div style="text-align: left; margin-bottom: 15px;">
+          <label style="display: block; font-weight: 600; margin-bottom: 6px; color: var(--card-text);">Email Address</label>
+          <input type="email" placeholder="student@charusat.edu.in" required style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 8px; background: rgba(255,255,255,0.9); font-size: 1rem;" />
+        </div>
+
+        <div style="text-align: left; margin-bottom: 20px;">
+          <label style="display: block; font-weight: 600; margin-bottom: 6px; color: var(--card-text);">Password</label>
+          <input type="password" placeholder="Enter password" required style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 8px; background: rgba(255,255,255,0.9); font-size: 1rem;" />
+        </div>
+
+        <button type="submit" style="width: 100%; padding: 12px; border: none; border-radius: 8px; background: linear-gradient(135deg, var(--accent-2), var(--accent-3)); color: white; font-weight: 700; font-size: 1rem; cursor: pointer;">
+          Sign In to Portal
+        </button>
+      </form>
+
+      <p style="margin-top: 18px; font-size: 0.9rem; color: var(--card-text);">
+        New student? <a href="register.html" style="color: var(--accent-2); font-weight: 600;">Create an account</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 <strong>StudentHub Portal</strong> • Charotar University of Science and Technology (CHARUSAT)</p>
+    <p>Student: <strong>Vishv Vaghasiya</strong> | ID: <strong>25CE130</strong> | CSPIT-CE</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
