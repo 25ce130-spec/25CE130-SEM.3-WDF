@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS studenthub CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE studenthub;
+CREATE TABLE students (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(100) NOT NULL, email VARCHAR(120) NOT NULL UNIQUE, course VARCHAR(80) NOT NULL, status ENUM('Active','Inactive') DEFAULT 'Active', created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+CREATE TABLE events (id INT AUTO_INCREMENT PRIMARY KEY, title VARCHAR(150) NOT NULL, event_date DATE NOT NULL, category VARCHAR(50), poster VARCHAR(255), status ENUM('Open','Closed') DEFAULT 'Open', created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+CREATE TABLE users (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(100) NOT NULL, email VARCHAR(120) NOT NULL UNIQUE, password VARCHAR(255) NOT NULL, role ENUM('student','admin') DEFAULT 'student', active TINYINT DEFAULT 1, last_login DATETIME NULL, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+CREATE TABLE registrations (id INT AUTO_INCREMENT PRIMARY KEY, student_id INT NOT NULL, event_id INT NOT NULL, registered_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, UNIQUE(student_id,event_id), FOREIGN KEY(student_id) REFERENCES students(id) ON DELETE CASCADE, FOREIGN KEY(event_id) REFERENCES events(id) ON DELETE CASCADE);
+CREATE TABLE audit_logs (id INT AUTO_INCREMENT PRIMARY KEY, user_id INT, action VARCHAR(255), ip_address VARCHAR(45), created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+INSERT INTO students(name,email,course) VALUES ('Aarav Patel','aarav@example.com','CE'),('Diya Shah','diya@example.com','IT'),('Riya Mehta','riya@example.com','CSE');
+INSERT INTO events(title,event_date,category) VALUES ('Web Hackathon','2026-11-15','Technical'),('Campus Sports Day','2026-12-05','Sports');

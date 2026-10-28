@@ -1,0 +1,1 @@
+<?php require __DIR__.'/db.php'; $db=db(); echo '<h1>Database connected successfully</h1>'; echo '<p>Server: '.$db->host_info.'</p>';
