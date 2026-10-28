@@ -1,0 +1,6 @@
+<?php
+session_start(); require '../PRACTICAL-8/db.php'; require 'auth.php'; $error='';
+if($_SERVER['REQUEST_METHOD']==='POST'){ $email=strtolower(trim($_POST['email']??'')); $password=$_POST['password']??''; $db=db(); $stmt=$db->prepare('SELECT id,name,email,password,role FROM users WHERE email=? AND active=1');$stmt->bind_param('s',$email);$stmt->execute();$result=$stmt->get_result();$user=$result->fetch_assoc();
+if($user && password_verify($password,$user['password'])){session_regenerate_id(true);$_SESSION['user']=$user;unset($_SESSION['user']['password']);$_SESSION['last_activity']=time();$stmt=$db->prepare('UPDATE users SET last_login=NOW() WHERE id=?');$stmt->bind_param('i',$user['id']);$stmt->execute();audit($db,(int)$user['id'],'User logged in');header('Location: '.($user['role']=='admin'?'dashboard.php':'student.php'));exit;} else {$error='Invalid email or password.';}}
+?>
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../PRACTICAL-7/style.css"><title>Login</title></head><body><main class="box"><h1>Login</h1><?php if($error):?><div class="error"><?= htmlspecialchars($error)?></div><?php endif?><form method="post"><label>Email<input type="email" name="email" required></label><label>Password<input type="password" name="password" required></label><button>Login</button></form></main></body></html>
